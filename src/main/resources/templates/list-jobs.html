@@ -11,8 +11,7 @@
   <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
   <!-- TODO #1 - Use a loop to display job results in a table. -->
-  <h2>Test Header</h2>
-  <a href="/list/jobs?column=all">View All</a>
+<!--  <a href="/list/jobs?column=all">View All</a>-->
   <table th:each="job : ${jobs}" class="job-listing">
     <tbody>
 <!--    <th:block>-->
