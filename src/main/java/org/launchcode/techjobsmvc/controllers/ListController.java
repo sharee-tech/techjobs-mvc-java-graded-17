@@ -46,13 +46,6 @@ public class ListController {
         return "list";
     }
 
-//    @GetMapping(value = "jobs")
-//    public String listJobs(Model model) {
-//        ArrayList<Job> jobs;
-//        jobs = JobData.findAll();
-//        model.addAttribute("jobs", jobs);
-//        return "list-jobs";
-//    }
     @GetMapping(value = "jobs")
     public String listJobsByColumnAndValue(Model model, @RequestParam String column, @RequestParam(required = false) String value) {
         ArrayList<Job> jobs;
